@@ -1,0 +1,307 @@
+
+/*Reset*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 16px;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+a{
+    text-decoration:none;
+}
+
+
+/* Colours */
+:root {
+    --Background-color: #EAEAEA;
+    --Background-text1: #1b1b1b;
+    --Background-text2: #4b4b4b;
+    --Background-text3: #a5a5a5;
+    --Point-color:#1b1b1b; /*('#AAFFBB');*/
+
+    --Background-black: #1b1b1b;
+    --Background-gray1: #EAEAEA;
+    --Background-gray2: #A5A5A5;
+    --Background-gray3: #646464;
+    --Background-gray4: #4B4B4B;
+    --Background-white: #F5F5F5;
+    --Display-font:'Galano Grotesque';
+}
+
+/*GNB*/
+
+.gnb {
+    background-color: var(--Background-color);
+    color: var(--Background-text1);
+    align-items: center;
+    display: flex;
+    max-width: 100vw;
+    padding: 32px 40px 8px 40px;
+    justify-content: space-between;
+    position: fixed;
+    top: 0px;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    transition: top 0.3s ease-in-out;
+}
+.page-landing{
+    margin-top: 80px;
+}
+
+.page-archive,.page-love,.page-about {
+  margin-top: 64px; /* Add space below the GNB */
+}
+    /* Style the menu icon (cloba) */
+.menu-icon {
+    display: none; /* Hide by default */
+    cursor: pointer;
+}
+/* contact inside a mobile menu */
+.menu-side-contact {
+    display: none;
+}
+
+    /* Style the menu icon (menu index) */
+.menu-tab, .menu{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 8px;
+}
+.menu-tab li{
+    width:120px;
+}
+.gnb a{
+    color:var(--Background-text1);
+}
+
+
+img{
+    width:100%;
+    align-items: center;
+}
+
+/*image fade in*/
+@keyframes fade-slide-in {
+  0% {
+    opacity: 0;
+    transform: translateY(20%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-slide-element {
+  opacity: 0;
+  transform: translateY(20%);
+  animation: fade-slide-in 0.8s ease-in-out forwards;
+}
+
+.footer{
+    width: 100%;
+    padding-right: 80px;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 40px;
+    z-index: 1200;
+}
+.side-contact p{
+    position: fixed;
+    bottom: 40px;
+}
+.side-contact a{
+    color: var(--Background-text1);
+}
+body.dark-mode .side-contact a{
+    color: var(--Background-text1);
+}
+/* Light Mode Styles */
+body {
+    background-color: var(--Background-color);
+    margin:0px 40px;
+    color: var(--Background-text1);
+}
+
+/* Dark Mode Styles*/
+body.dark-mode{
+    background-color: var(--Background-color);
+    color: var(--Background-text1);
+}
+
+
+/* Toggle Styles */
+.toggle-container {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.toggle {
+    position: relative;
+    display: inline-block;
+    width: 54px;
+    height: 28px;
+}
+
+.toggle input[type="checkbox"] {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--Background-text1);
+    transition: 0.4s;
+    border-radius: 34px;
+}
+
+
+/* 동그라미 */
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 24px;
+    width: 24px;
+    left: 2px;
+    bottom: 2px;
+    background-color: var(--Background-color);
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+
+/* in light mode, toggle background color*/
+input:checked + .slider {
+    background-color: var(--Background-text1);
+}
+
+/* when you press the btn, 동그라미's movement*/
+input:checked + .slider:before {
+    transform: translateX(24px);
+    background-color: var(--Background-color);
+}
+
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    body, .gnb {
+        margin:0px 16px;
+        max-width: 94vw;
+    }
+    .footer{
+    padding-right: 32px;
+    }
+
+    .gnb {
+        display: flex;
+        width: 375px;
+        padding: 16px 0px 16px 0px;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .menu{
+        display: flex;
+        flex-direction: row-reverse;
+        gap:16px;
+    }
+
+/*menu mobile*/
+    .menu-icon {
+        display: flex; /* Show the menu icon for mobile */
+    }
+    .page-landing{
+        position: relative;
+    }
+    .menu-tab{
+        display: none;
+    }
+    .menu-tab .display5{
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 48px; /* 100% */
+        letter-spacing: 1.536px;
+        text-transform: uppercase;
+    }
+
+    .menu-tab.active {
+        display: flex; /* Show the menu items when active */
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 32px;
+        align-self: stretch;
+        position: absolute;
+        top:60px;
+        left:0px;
+        padding-bottom: 100vh;
+        padding-top:16px;
+        z-index: 1100;
+        width:100vw;
+        background-color: var(--Background-color);
+    }
+    .menu-side-contact {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        margin-top:40vh;
+    }
+}
+
+/* Media query for big devices */
+@media screen and (min-width: 2000px){
+    body, .gnb {
+        margin:0px 80px;
+    }
+    .archive-img{
+        height: 480px;
+    }
+}

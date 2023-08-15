@@ -1,0 +1,68 @@
+
+    /* Landing page */
+
+.hero-img{
+    border-radius: 16px;
+    height:32vw;
+    overflow: hidden;
+    margin-bottom: 24px;
+}
+.page-landing .h3{
+    color: var(--Background-text3);
+    font-family: Neue Haas Grotesk Display Pro;
+    font-size: 3.2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%; 
+    opacity: 0.5; 
+}
+.landing-container{
+    display: flex;
+    justify-content: space-between;
+}
+.contact{
+    flex-direction: column;
+    text-align: right;
+}
+.contact-icon-set{
+    display: flex;
+    justify-content: flex-end;
+    gap:16px;
+    margin-top:16px;
+}
+.contact-icon-set a{
+    width: 24px;
+}
+
+
+
+/* Media query for tablet devices */
+@media screen and (max-width: 1200px){
+    .contact .display2{
+        font-size: 2.6rem;
+    }
+    .page-landing .h3{
+        font-size: 2.6rem;
+    }
+}
+
+@media screen and (max-width: 768px){
+    /*hero imag*/
+    .landing-container{
+        display: none;
+    }
+
+    .hero-img{
+        height: 80vh; /* 100% of viewport height */
+    }
+
+    .hero-img img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover; 
+    }
+
+    .footer{
+    padding-right: 32px;
+    }
+}
