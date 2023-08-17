@@ -8,33 +8,29 @@ darkModeToggle.addEventListener('change', () => {
     body.classList.toggle('dark-mode');
 
     // Toggle icons based on dark mode state
-    if (body.classList.contains('dark-mode')){
-        iconSun.style.display = 'none';
-        iconMoon.style.display = 'block';
-        localStorage.setItem('darkMode', 'enabled');
-    } else {
+    if (body.classList.contains('dark-mode')) {
         iconSun.style.display = 'block';
         iconMoon.style.display = 'none';
-        localStorage.setItem('darkMode', 'disabled');
-    }
+        localStorage.setItem('darkMode', 'enabled');
 
-    if (body.classList.contains('dark-mode')) {
-        // Dark mode is active, update CSS variables for dark mode
         body.style.setProperty('--Background-color', '#1b1b1b');
         body.style.setProperty('--Background-text1', '#f5f5f5');
         body.style.setProperty('--Background-text2', '#a5a5a5');
         body.style.setProperty('--Background-text3', '#646464');
         body.style.setProperty('--Point-color', '#AAFFBB');
     } else {
-        // Light mode is active, revert CSS variables to light mode
+        iconSun.style.display = 'none';
+        iconMoon.style.display = 'block';
+        localStorage.setItem('darkMode', 'disabled');
+        
         body.style.setProperty('--Background-color', '#eaeaea');
         body.style.setProperty('--Background-text1', '#1b1b1b');
         body.style.setProperty('--Background-text2', '#4b4b4b');
         body.style.setProperty('--Background-text3', '#a5a5a5');
         body.style.setProperty('--Point-color', '#1b1b1b');
     }
-
 });
+
 
 // Function to set a cookie
 function setCookie(name, value, days) {
@@ -55,11 +51,15 @@ function getCookie(name) {
 // Check user preference from localStorage and apply dark mode if enabled
 if (localStorage.getItem('darkMode') === 'enabled') {
     body.classList.add('dark-mode');
-    iconSun.style.display = 'none';
-    iconMoon.style.display = 'block';
-} else {
     iconSun.style.display = 'block';
     iconMoon.style.display = 'none';
+
+    darkModeToggle.checked = true;
+} else {
+    iconSun.style.display = 'none';
+    iconMoon.style.display = 'block';
+
+    darkModeToggle.checked = false;
 }
 
 //menu icon
@@ -107,5 +107,3 @@ function date_time(id) {
     setTimeout(() => date_time(id), 1000);
     return true;
 }
-
-
