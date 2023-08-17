@@ -2,19 +2,19 @@
 
 @font-face {
     font-family: 'neuehaasdisplayroman';
-    src: url('neuehaasdisplayroman-webfont.woff2') format('woff2'),
-         url('neuehaasdisplayroman-webfont.woff') format('woff'),
-         url('NeueHaasDisplayRoman.ttf') format('ttf');
+    src: url('./neuehaasdisplayroman-webfont.woff2') format('woff2'),
+         url('./neuehaasdisplayroman-webfont.woff') format('woff'),
+         url('./NeueHaasDisplayRoman.ttf') format('ttf');
     font-weight: normal;
     font-style: normal;
 
 }
 
 @font-face {
-    font-family: 'galano_grotesqueregular';
-    src: url('galanogrotesqueregular-webfont.woff2') format('woff2'),
-         url('galanogrotesqueregular-webfont.woff') format('woff'),
-         url('GalanoGrotesqueRegular.otf') format('otf');
+    font-family: './galano_grotesqueregular';
+    src: url('./galanogrotesqueregular-webfont.woff2') format('woff2'),
+         url('./galanogrotesqueregular-webfont.woff') format('woff'),
+         url('./GalanoGrotesqueRegular.otf') format('otf');
     font-weight: normal;
     font-style: normal;
 }
@@ -22,19 +22,19 @@
 
 @font-face {
     font-family: 'galano_grotesquelight';
-    src: url('galanogrotesquelight-webfont.woff2') format('woff2'),
-         url('galanogrotesquelight-webfont.woff') format('woff'),
-         url('GalanoGrotesqueLight.otf') format('otf');
+    src: url('./galanogrotesquelight-webfont.woff2') format('woff2'),
+         url('./galanogrotesquelight-webfont.woff') format('woff'),
+         url('./GalanoGrotesqueLight.otf') format('otf');
     font-weight: normal;
     font-style: normal;
 
 }
 
 @font-face {
-    font-family: 'galano_grotesquemedium';
-    src: url('galanogrotesquemedium-webfont.woff2') format('woff2'),
-         url('galanogrotesquemedium-webfont.woff') format('woff'),
-         url('GalanoGrotesqueMedium.otf') format('otf');
+    font-family: './galano_grotesquemedium';
+    src: url('./galanogrotesquemedium-webfont.woff2') format('woff2'),
+         url('./galanogrotesquemedium-webfont.woff') format('woff'),
+         url('./GalanoGrotesqueMedium.otf') format('otf');
 
     font-weight: normal;
     font-style: normal;
