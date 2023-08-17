@@ -1,4 +1,3 @@
-
 /*Reset*/
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -114,7 +113,6 @@ a{
     color:var(--Background-text1);
 }
 
-
 img{
     width:100%;
     align-items: center;
@@ -154,9 +152,7 @@ img{
 .side-contact a{
     color: var(--Background-text1);
 }
-body.dark-mode .side-contact a{
-    color: var(--Background-text1);
-}
+
 /* Light Mode Styles */
 body {
     background-color: var(--Background-color);
@@ -166,10 +162,34 @@ body {
 
 /* Dark Mode Styles*/
 body.dark-mode{
-    background-color: var(--Background-color);
-    color: var(--Background-text1);
+    background-color: var(--Background-black);
+    color: var(--Background-gray1);
 }
 
+body.dark-mode .side-contact a{
+    color: var(--Background-gray1);
+}
+
+body.dark-mode .gnb {
+    background-color: var(--Background-black);
+    color: var(--Background-gray1);
+}
+
+body.dark-mode .gnb a {
+    color: var(--Background-gray1);
+}
+
+body.dark-mode .gnb .slider {
+    background-color: var(--Background-gray1);
+}
+
+body.dark-mode .gnb .slider:before {
+    background-color: var(--Background-black);
+}
+
+body.dark-mode .gnb .icon-sun path {
+    fill: var(--Background-gray1);
+}
 
 /* Toggle Styles */
 .toggle-container {
@@ -225,7 +245,7 @@ input:checked + .slider {
 
 /* when you press the btn, 동그라미's movement*/
 input:checked + .slider:before {
-    transform: translateX(24px);
+    transform: translateX(26px);
     background-color: var(--Background-color);
 }
 
