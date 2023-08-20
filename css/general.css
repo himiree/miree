@@ -253,11 +253,8 @@ input:checked + .slider:before {
 /* Media query for mobile devices */
 @media (max-width: 768px) {
     body, .gnb {
-        margin:0px;
+        margin:0px 16px;
         max-width: 100vw;
-    }
-    .footer{
-    padding-right: 32px;
     }
 
     .gnb {
@@ -312,7 +309,7 @@ input:checked + .slider:before {
         display: flex;
         flex-direction: column;
         gap: 8px;
-        margin-top:40vh;
+        margin-top:24vh;
     }
 }
 
