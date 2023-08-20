@@ -259,7 +259,7 @@ input:checked + .slider:before {
 
     .gnb {
         display: flex;
-        width: 375px;
+        width: 100%;
         padding: 16px 0px 16px 0px;
         align-items: center;
         gap: 8px;
