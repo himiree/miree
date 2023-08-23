@@ -81,7 +81,7 @@ const scrollThreshold = 100; // Adjust the threshold as needed
 window.addEventListener('scroll', () => {
   const currentScrollPos = window.pageYOffset;
   
-  if (prevScrollPos > currentScrollPos) {
+  if (currentScrollPos === 0 || prevScrollPos > currentScrollPos) {
     document.querySelector('.gnb_move').style.top = '0';
   } else {
     document.querySelector('.gnb_move').style.top = '-100px';
