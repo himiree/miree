@@ -161,6 +161,14 @@ body {
 }
 
 /* Dark Mode Styles*/
+body.dark-mode .menu-icon path {
+    fill: var(--Background-gray1);
+}
+
+body.dark-mode .menu-tab {
+    background-color: var(--Background-black);
+}
+
 body.dark-mode{
     background-color: var(--Background-black);
     color: var(--Background-gray1);
