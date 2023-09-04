@@ -56,7 +56,7 @@
 }
 
 @media screen and (max-width: 768px){
-    /*hero imag*/
+    /*hero img*/
     .landing-container{
         display: none;
     }
@@ -66,7 +66,6 @@
     }
 
     .hero-img img{
-        width: 100%;
         height: 100%;
         object-fit: cover; 
     }
