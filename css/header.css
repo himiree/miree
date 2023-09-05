@@ -65,7 +65,7 @@
         height: 80vh; /* 100% of viewport height */
     }
 
-    .hero-img img{
+    .hero-img a;
         height: 100%;
         object-fit: cover; 
     }
