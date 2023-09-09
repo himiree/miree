@@ -62,6 +62,28 @@ if (localStorage.getItem('darkMode') === 'enabled') {
     darkModeToggle.checked = false;
 }
 
+//hero-img slideshow
+let slideIndex = 0;
+const slides = document.querySelectorAll(".slide");
+
+function showSlides() {
+    slideIndex++;
+
+    if (slideIndex >= slides.length) {
+        slideIndex = 0;
+    }
+
+    // Slide all images to the left
+    slides.forEach((slide, index) => {
+        const offset = (index - slideIndex) * 100; // Calculate the left offset
+        slide.style.transform = `translateX(${offset}%)`;
+    });
+
+    setTimeout(showSlides, 2000); // Change slide every 2 seconds (adjust as needed)
+}
+
+showSlides();
+
 //menu icon
 const menuicon = document.querySelector('.menu-icon');
 const menutab = document.querySelector('.menu-tab');
