@@ -98,7 +98,8 @@ function date_time(id) {
         hour: '2-digit',
         minute: '2-digit',
         second: '2-digit',
-        timeZone: 'Asia/Seoul'  // Set to Korean Standard Time (KST)
+        timeZone: 'Europe/Berlin'
+        // timeZone: 'Asia/Seoul'  // Set to Korean Standard Time (KST)
     };
 
     const koreanTime = date.toLocaleTimeString('en-US', options);
