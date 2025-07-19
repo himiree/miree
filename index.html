@@ -4,6 +4,11 @@
   <meta charset="UTF-8">
   <title>Damiree Kim</title>
   <style>
+    @font-face {
+      font-family: 'CustomFont';
+      src: url('./your-font-file.woff2') format('woff2'); /* 로컬 폰트 경로로 교체 필요 */
+    }
+
     body {
       margin: 0;
       padding: 0;
@@ -12,27 +17,19 @@
       overflow: hidden;
     }
 
+    .scrolling-text {
+      white-space: nowrap;
+      display: inline-block;
+      padding-left: 100%;
+      animation: scroll-left 30s linear infinite;
+    }
+
     .wrapper {
-      width: 100vw;
+      width: 100%;
       overflow: hidden;
       background: white;
       font-size: 1rem;
       font-weight: 400;
-    }
-
-    .scrolling-text {
-      display: inline-block;
-      white-space: nowrap;
-      animation: scroll-left 20s linear infinite;
-    }
-
-    .section {
-      display: inline-block;
-      margin-right: 3rem;
-    }
-
-    .bold {
-      font-weight: bold;
     }
 
     @keyframes scroll-left {
@@ -40,8 +37,17 @@
         transform: translateX(0%);
       }
       100% {
-        transform: translateX(-50%);
+        transform: translateX(-100%);
       }
+    }
+
+    .bold {
+      font-weight: bold;
+    }
+
+    .section {
+      display: inline-block;
+      margin-right: 3rem;
     }
   </style>
 </head>
@@ -49,12 +55,10 @@
   <div class="wrapper">
     <div class="scrolling-text">
       <span class="section bold">Damiree Kim</span>
-      <span class="section">in MUC</span>
-      <span class="section">New site is coming soon! | ᕕ( ᐛ )ᕗ✧</span>
-      <span> <a href="https://www.instagram.com/damiree_813"target="_blank">Instagram</a></span>
-      <span> <a href="www.linkedin.com/in/damiree-kim"target="_blank">Linkedin</a></span>
+      <span class="section">Munich</span>
+      <span class="section">New site is coming soon!</span>
+      <span class="section">@damiree_813</span>
       <span class="section bold">damiree813@gmail.com</span>
-
     </div>
   </div>
 </body>
