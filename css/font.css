@@ -1,0 +1,186 @@
+/* Fonts */
+@font-face {
+    font-family: 'Galano Grotesque';
+    src: url('GalanoGrotesque-Medium.eot');
+    src: url('GalanoGrotesque-Medium.eot?#iefix') format('embedded-opentype'),
+        url('GalanoGrotesque-Medium.woff2') format('woff2'),
+        url('GalanoGrotesque-Medium.woff') format('woff'),
+        url('GalanoGrotesque-Medium.ttf') format('truetype'),
+        url('GalanoGrotesque-Medium.svg#GalanoGrotesque-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Galano Grotesque';
+    src: url('GalanoGrotesque-Light.eot');
+    src: url('GalanoGrotesque-Light.eot?#iefix') format('embedded-opentype'),
+        url('GalanoGrotesque-Light.woff2') format('woff2'),
+        url('GalanoGrotesque-Light.woff') format('woff'),
+        url('GalanoGrotesque-Light.ttf') format('truetype'),
+        url('GalanoGrotesque-Light.svg#GalanoGrotesque-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Galano Grotesque';
+    src: url('GalanoGrotesque-Regular.eot');
+    src: url('GalanoGrotesque-Regular.eot?#iefix') format('embedded-opentype'),
+        url('GalanoGrotesque-Regular.woff2') format('woff2'),
+        url('GalanoGrotesque-Regular.woff') format('woff'),
+        url('GalanoGrotesque-Regular.ttf') format('truetype'),
+        url('GalanoGrotesque-Regular.svg#GalanoGrotesque-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neue Haas Grotesk Display Pro';
+    src: url('NeueHaasDisplay-Roman.eot');
+    src: url('NeueHaasDisplay-Roman.eot?#iefix') format('embedded-opentype'),
+        url('NeueHaasDisplay-Roman.woff2') format('woff2'),
+        url('NeueHaasDisplay-Roman.woff') format('woff'),
+        url('NeueHaasDisplay-Roman.ttf') format('truetype'),
+        url('NeueHaasDisplay-Roman.svg#NeueHaasDisplay-Roman') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+h1, .h1{
+    font-family: Neue Haas Grotesk Display Pro;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 64px; /* 100% */
+}
+
+h2, .h2{
+    font-family: Neue Haas Grotesk Display Pro;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 48px; /* 100% */
+    letter-spacing: 1.536px;
+    text-transform: uppercase;
+}
+
+h3, .h3{
+    font-family: Neue Haas Grotesk Display Pro;
+    font-size: 3.2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; 
+}
+
+h4, .h4{
+    font-family: Neue Haas Grotesk Display Pro;
+    font-size: 3.2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 142.857% */
+    letter-spacing: 0.896px;
+}
+
+
+.display1{
+    text-align: center;
+    font-family: Galano Grotesque;
+    font-size: 88px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 80px; /* 90.909% */
+}
+
+.display2{
+    font-family: Galano Grotesque;
+    font-size: 3.2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 48px; /* 100% */
+}
+
+.display3{
+    font-family: Galano Grotesque;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 100% */
+    text-transform: uppercase;
+}
+
+.display4{
+    font-family: Galano Grotesque;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px; /* 125% */
+    letter-spacing: -0.24px;
+}
+
+.display5{
+    font-family: Galano Grotesque;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px; /* 142.857% */
+    letter-spacing: 0.35px;
+    text-transform: uppercase;
+}
+
+.display6{
+    font-family: Galano Grotesque;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px; /* 100% */
+}
+
+.display7{
+    font-family: Galano Grotesque;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 48px; /* 85.714% */
+}
+.body1{
+    font-family: Neue Haas Grotesk Display Pro;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    letter-spacing: 0.512px;
+}
+
+.body2{
+    font-family: Neue Haas Grotesk Display Pro;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 171.429% */
+    letter-spacing: 0.448px;
+}
+
+.body3{
+    font-family: Neue Haas Grotesk Display Pro;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 0.384px;
+}
+
+.body4{
+    font-family: Neue Haas Grotesk Display Pro;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0.512px;
+}
